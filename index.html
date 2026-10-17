@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="NOV — Independent artist. INTRO 2026.11.18">
+<title>NOV — Official</title>
+<style>
+:root{--bg:#090909;--fg:#f1f1f1;--muted:#929292;--line:#303030}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:Arial,"Helvetica Neue",sans-serif;letter-spacing:.04em}
+a{color:inherit;text-decoration:none}a:hover{opacity:.65}
+header{position:fixed;top:0;left:0;right:0;z-index:10;display:flex;justify-content:space-between;align-items:center;padding:22px 5vw;background:rgba(9,9,9,.88);backdrop-filter:blur(10px);border-bottom:1px solid #202020}
+.logo{font-size:17px;letter-spacing:.24em;font-weight:700}
+nav{display:flex;gap:22px;font-size:10px;letter-spacing:.14em;color:#bbb}
+.hero{min-height:100svh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:100px 20px 60px;border-bottom:1px solid var(--line);position:relative;overflow:hidden}
+.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(9,9,9,.92),rgba(9,9,9,.5)),url("nov-portrait.jpg") center 42%/cover no-repeat;opacity:.35;filter:grayscale(1);transform:scale(1.02)}
+.hero>*{position:relative}
+.hero h1{font-size:clamp(76px,18vw,220px);letter-spacing:.16em;font-weight:500;margin:0 0 18px;padding-left:.16em;line-height:.9}
+.hero p{font-size:10px;color:#c2c2c2;letter-spacing:.35em;margin:24px 0 0}
+.scroll{position:absolute;bottom:28px;font-size:9px;letter-spacing:.2em;color:#777}
+section{padding:110px 9vw;border-bottom:1px solid var(--line)}
+.eyebrow{font-size:10px;letter-spacing:.3em;color:var(--muted);margin:0 0 32px}
+h2{font-size:clamp(28px,5vw,54px);font-weight:400;letter-spacing:.08em;margin:0 0 26px}
+.release{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:end}
+.release .date{font-size:12px;color:var(--muted);letter-spacing:.2em}
+.release .title{font-size:clamp(38px,8vw,92px);letter-spacing:.08em;margin:12px 0}
+.release .note{color:#aaa;font-size:12px;line-height:2}
+.rule{height:1px;background:var(--line);margin:34px 0}
+.about-grid{display:grid;grid-template-columns:minmax(220px, .8fr) 1.2fr;gap:7vw;align-items:center}
+.portrait{width:100%;max-height:650px;object-fit:cover;object-position:center 35%;filter:grayscale(1);display:block;opacity:.9}
+.about{max-width:600px;color:#bcbcbc;line-height:2.1;font-size:14px}
+.links{display:flex;flex-wrap:wrap;gap:12px}
+.links a{border:1px solid #454545;padding:14px 18px;font-size:10px;letter-spacing:.15em}
+footer{padding:28px 5vw;display:flex;justify-content:space-between;gap:15px;color:#777;font-size:9px;letter-spacing:.16em}
+@media(max-width:600px){header{padding:18px 5vw}nav{gap:12px;font-size:9px}section{padding:82px 7vw}.release{grid-template-columns:1fr;gap:10px}.about-grid{grid-template-columns:1fr;gap:28px}.portrait{max-height:520px;object-position:center 30%}.scroll{display:none}footer{flex-direction:column}}
+</style>
+</head>
+<body>
+<header>
+  <a class="logo" href="#top">NOV</a>
+  <nav><a href="#music">MUSIC</a><a href="#about">ABOUT</a><a href="#links">LINKS</a></nav>
+</header>
+<main>
+  <section class="hero" id="top">
+    <h1>NOV</h1>
+    <p>INDEPENDENT ARTIST</p>
+    <div class="scroll">SCROLL TO EXPLORE ↓</div>
+  </section>
+  <section id="music">
+    <p class="eyebrow">01 / MUSIC</p>
+    <div class="release">
+      <div><div class="date">RELEASE — 2026.11.18</div><div class="title">INTRO</div><div class="release note">A project by NOV.</div></div>
+      <div class="release note">Streaming links will be added here when the release is available.</div>
+    </div>
+    <div class="rule"></div>
+    <p class="eyebrow">ARCHIVE</p>
+    <div style="font-size:20px;letter-spacing:.1em">IN INTRO <span style="font-size:10px;color:#777"> / ARCHIVE</span></div>
+  </section>
+  <section id="about">
+    <p class="eyebrow">02 / ABOUT</p>
+    <div class="about-grid">
+      <img class="portrait" src="nov-portrait.jpg" alt="NOV portrait">
+      <div><h2>NOV</h2><p class="about">Independent artist.<br>Sound, memory, and the space between things.</p></div>
+    </div>
+  </section>
+  <section id="links">
+    <p class="eyebrow">03 / LINKS</p><h2>FIND NOV</h2>
+    <div class="links">
+      <a href="#" aria-label="Instagram">INSTAGRAM ↗</a><a href="#" aria-label="Spotify">SPOTIFY ↗</a><a href="#" aria-label="Apple Music">APPLE MUSIC ↗</a><a href="#" aria-label="YouTube">YOUTUBE ↗</a>
+    </div>
+    <p style="color:#777;font-size:10px;line-height:1.8;margin-top:24px">公開前に各リンクの # を実際のプロフィールURLに変更してください。</p>
+  </section>
+</main>
+<footer><span>© NOV</span><span>OFFICIAL WEBSITE</span></footer>
+</body>
+</html>
